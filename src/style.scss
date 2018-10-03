@@ -1,0 +1,19 @@
+
+@import './css/_normalize.scss';
+@import './css/custom/bootstrap.scss';
+
+@import './css/_app_variable.scss';
+@import './css/_header.scss';
+@import './css/_app_layout.scss';
+@import './css/_typography.scss';
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin:0; padding:0;
+}
+.container {
+    
+    .row{
+
+    }
+}

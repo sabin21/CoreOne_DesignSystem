@@ -1,0 +1,12 @@
+
+p{
+    color:$text-base-color;
+    &.small{
+        font-size:$font-size-p-small;
+        margin-bottom: 1.25rem;
+    }
+    &.tiny{
+        font-size:$font-size-p-tiny;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,67 @@
+.app-wrap{
+    width: 100%; min-height: 300px;
+}
+.page-wrap{
+    width: 100%; position: relative;
+    .content-wrap{
+        width: 100%; margin-top: 68px;
+        &:before {
+            clear: both; display: table; content:"";
+        }
+    }
+}
+
+
+/* Design Guide Addon =============*/
+/*======================================================*/
+.system-header{
+    width: 100%; margin: 6rem 0 3.5rem 0; border-bottom: 1px solid #ddd;
+    .system-chapter-title{
+        margin: 0 0 0.75rem 0;
+        &:before {
+            clear: both; display: table; content:"";
+        }
+        span{
+            color: #9B9B9B;
+        }
+    }
+    p{ margin-bottom: 2.25rem; }
+}
+.system-chapter-subtitle{
+    margin: 0 0 2.75rem 0; font-weight: 600;
+    &:before {
+        clear: both; display: table; content:"";
+    }
+    span{
+        color: #9B9B9B;
+    }
+}
+.system-figure-wrap{
+    width: 100%; padding: 2rem;
+    &.back-gray{
+        background-color:#eee;
+    } 
+}
+
+.chapter-sub-hr{
+    margin:5rem 0 3rem 0;
+}
+.spec-info-wrap{
+    width: 100%; display: table; background-color:$white;
+    .table-row { 
+        width: 100%; display: table-row; font-size: 14px; line-height: 20px;
+        .table-cell{
+            height:1.25rem; display: table-cell; padding: 0.5rem 1rem;
+            border-top:1px solid #bcbcbc;
+        }
+    
+    }
+}
+.row-guide-16-8{
+    background-image:url('./img/design_guide/grid_row_16_8.png');
+    background-repeat: repeat-y; background-position: top center;
+}
+.row-guide-16-12{
+    background-image:url('./img/design_guide/grid_row_16_12.png');
+    background-position: top center;
+}
