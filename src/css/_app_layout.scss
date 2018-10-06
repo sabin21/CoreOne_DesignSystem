@@ -12,12 +12,13 @@
 }
 
 
-/* Design Guide Addon =============*/
+/* =============*/
 /*======================================================*/
 .system-header{
-    width: 100%; margin: 6rem 0 3.5rem 0; border-bottom: 1px solid #ddd;
+    width: 100%; height: 184px; margin: 0 0 3.5rem 0; border-bottom: 1px solid $gray-400;
+    background-color:$gray-100;
     .system-chapter-title{
-        margin: 0 0 0.75rem 0;
+        margin: 0 0 0.75rem 0; padding-top: 3rem;
         &:before {
             clear: both; display: table; content:"";
         }
@@ -28,7 +29,7 @@
     p{ margin-bottom: 2.25rem; }
 }
 .system-chapter-subtitle{
-    margin: 0 0 2.75rem 0; font-weight: 600;
+    margin: 0 0 2.75rem 0; font-weight: 600; color:$gray-700;
     &:before {
         clear: both; display: table; content:"";
     }
@@ -36,12 +37,24 @@
         color: #9B9B9B;
     }
 }
+.title-3th {
+    font-weight: 600; letter-spacing:-0.04em; color:$gray-700;
+}
 .system-figure-wrap{
-    width: 100%; padding: 2rem;
+    width: 100%; text-align: center;
+    &#grid-unit-pict{
+        padding: 2.5rem; 
+    }
     &.back-gray{
-        background-color:#eee;
+        background-color:$gray-100;
     } 
 }
+img#grid-unit-pict { width: 650px; }
+img#grid-base-fontsize { width: 964px; margin-top: 1rem;}
+img#grid-element-spacing { width: 723px; margin-top: 1rem;}
+#icon_grid_1 { width: 480px; margin-top: 1rem;}
+#icon_shape { width: 848px; margin-top: 1rem;}
+#icon_size { width: 650px; margin-top: 1rem;}
 
 .chapter-sub-hr{
     margin:5rem 0 3rem 0;
@@ -64,4 +77,13 @@
 .row-guide-16-12{
     background-image:url('./img/design_guide/grid_row_16_12.png');
     background-position: top center;
+}
+
+.grid-test{
+    &.gutter{
+        height: 156px; background-color:$gray-200;
+    }
+    &.col-inner{
+        height: 156px; background-color:$gray-400;
+    }
 }
