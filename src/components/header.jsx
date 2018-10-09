@@ -7,6 +7,8 @@ import StyleGrid from './style_grid.jsx';
 import StyleTypography from './style_typography.jsx';
 import StyleColor from './style_color.jsx';
 import StyleIcon from './style_icon.jsx';
+
+import AccordionSample from './sample_accordion.jsx';
 /*
 const Loading = () => <div>Loading...</div>;
 const Style = Loadable({
@@ -27,6 +29,7 @@ export class HeaderMenu extends React.Component {
                     </li>
                     <li className="gnb-menu">
                         <NavLink to={"/style"} className="gnb-link">Components</NavLink>
+                        <SubmenuComponent />
                     </li>
                     <li className="gnb-menu"><NavLink to={"/style"} className="gnb-link">Design Pattern</NavLink></li>
                     <li className="gnb-menu"><NavLink to={"/style"} className="gnb-link">Page Pattern</NavLink></li>
@@ -49,7 +52,29 @@ class SubmenuStyle extends React.Component{
                     <NavLink to={"/style_color"}>Color System</NavLink>
                 </li>
                 <li className="nav-submenu-link">
-                    <NavLink to={"/style_icon"}>Iconngraphy</NavLink>
+                    <NavLink to={"/style_icon"}>Iconography</NavLink>
+                </li>
+                <span></span>
+            </ul>            
+        );
+    }
+}
+
+class SubmenuComponent extends React.Component{
+    render(){
+        return(            
+            <ul className="nav-submenu">
+                <li className="nav-submenu-link">
+                    <NavLink to={"/accordion_sample"}>Accordion</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/style_typography"}>Typography</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/style_color"}>Color System</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/style_icon"}>Iconography</NavLink>
                 </li>
                 <span></span>
             </ul>            
@@ -73,6 +98,7 @@ export class Header extends React.Component{
                         <Route path="/style_typography" component={StyleTypography} />
                         <Route path="/style_color" component={StyleColor} />
                         <Route path="/style_icon" component={StyleIcon} />
+                        <Route path="/accordion_sample" component={AccordionSample} />
                     </Switch>
                 </div>
                 

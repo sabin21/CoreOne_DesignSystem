@@ -1,0 +1,20 @@
+.accordion01 {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.accordion01 .title {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.accordion01 .title:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.accordion01 .content {
+  background: rgba(255, 255, 255, 0.2);
+  white-space: pre-wrap;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
