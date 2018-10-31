@@ -9,6 +9,13 @@ import StyleColor from './style_color.jsx';
 import StyleIcon from './style_icon.jsx';
 
 import AccordionSample from './sample_accordion.jsx';
+import CarouselSample from './sample_carousel.jsx';
+import CardSample01 from './sample_card01.jsx';
+import BtnSample01 from './sample_btn01.jsx';
+
+import CarouselPattern01 from './pattern_carousel_01.jsx';
+import HeadPattern01 from './pattern_head_01.jsx';
+
 /*
 const Loading = () => <div>Loading...</div>;
 const Style = Loadable({
@@ -31,7 +38,10 @@ export class HeaderMenu extends React.Component {
                         <NavLink to={"/style"} className="gnb-link">Components</NavLink>
                         <SubmenuComponent />
                     </li>
-                    <li className="gnb-menu"><NavLink to={"/style"} className="gnb-link">Design Pattern</NavLink></li>
+                    <li className="gnb-menu">
+                        <NavLink to={"/pattern_carousel_01"} className="gnb-link">Design Pattern</NavLink>
+                        <SubmenuPattern />
+                    </li>
                     <li className="gnb-menu"><NavLink to={"/style"} className="gnb-link">Page Pattern</NavLink></li>
                 </ul>                
             </nav>
@@ -65,13 +75,41 @@ class SubmenuComponent extends React.Component{
         return(            
             <ul className="nav-submenu">
                 <li className="nav-submenu-link">
+                    <NavLink to={"/btn_sample01"}>Buttons 01</NavLink>
+                </li>
+                <li className="nav-submenu-link">
                     <NavLink to={"/accordion_sample"}>Accordion</NavLink>
                 </li>
                 <li className="nav-submenu-link">
-                    <NavLink to={"/style_typography"}>Typography</NavLink>
+                    <NavLink to={"/carousel_sample"}>Carousel</NavLink>
                 </li>
                 <li className="nav-submenu-link">
-                    <NavLink to={"/style_color"}>Color System</NavLink>
+                    <NavLink to={"/card_sample01"}>Cards</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/style_icon"}>Iconography</NavLink>
+                </li>
+                <span></span>
+            </ul>            
+        );
+    }
+}
+
+class SubmenuPattern extends React.Component{
+    render(){
+        return(            
+            <ul className="nav-submenu">
+                <li className="nav-submenu-link">
+                    <NavLink to={"/pattern_carousel_01"}>Carousel Patterns</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/pattern_head_01"}>Article Head</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/carousel_sample"}>Carousel</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/card_sample01"}>Cards</NavLink>
                 </li>
                 <li className="nav-submenu-link">
                     <NavLink to={"/style_icon"}>Iconography</NavLink>
@@ -99,6 +137,11 @@ export class Header extends React.Component{
                         <Route path="/style_color" component={StyleColor} />
                         <Route path="/style_icon" component={StyleIcon} />
                         <Route path="/accordion_sample" component={AccordionSample} />
+                        <Route path="/carousel_sample" component={CarouselSample} />
+                        <Route path="/card_sample01" component={CardSample01} />
+                        <Route path="/btn_sample01" component={BtnSample01} />
+                        <Route path="/pattern_carousel_01" component={CarouselPattern01} />
+                        <Route path="/pattern_head_01" component={HeadPattern01} />
                     </Switch>
                 </div>
                 

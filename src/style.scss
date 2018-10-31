@@ -8,6 +8,11 @@
 @import './css/_typography.scss';
 @import './css/_header.scss';
 @import './css/style_sample.scss';
+@import './css/_carousel.scss';
+
+@import './components/head/_article_head.scss';
+@import './components/action_bar/_article_actionbar.scss';
+
 
 
 *, *:before, *:after{

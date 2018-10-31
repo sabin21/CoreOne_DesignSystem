@@ -38,3 +38,46 @@ $p1-100:  #DE1B6F;
 $p1-200:  #C20254;
 $p1-300:  #8D0753;
 $p1-400:  #620037;
+
+// fonts
+
+$display1-size:               5rem !default;
+$display2-size:               4.5rem !default;
+$display3-size:               4rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             700 !default;
+$display2-weight:             700 !default;
+$display3-weight:             700 !default;
+$display4-weight:             700 !default;
+$display-line-height:         1em !default;
+
+// article
+$article-head-height-full: 100vh;
+$article-head-height: 560px;
+
+//
+$btn-font-weight: 400;
+$btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out, 
+border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// Carousel
+
+$carousel-control-color:            $white !default;
+$carousel-control-width:            15% !default;
+$carousel-control-opacity:          .5 !default;
+
+$carousel-indicator-width:          30px !default;
+$carousel-indicator-height:         3px !default;
+$carousel-indicator-spacer:         3px !default;
+$carousel-indicator-active-bg:      $white !default;
+
+$carousel-caption-width:            70% !default;
+$carousel-caption-color:            $white !default;
+
+$carousel-control-icon-width:       20px !default;
+
+$carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+$carousel-transition:               transform .6s ease !default;

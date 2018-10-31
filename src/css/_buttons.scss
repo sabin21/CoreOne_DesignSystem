@@ -1,0 +1,23 @@
+
+.btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  @include transition($btn-transition);
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: 0.5;
+    @include box-shadow(none);
+  }
+}

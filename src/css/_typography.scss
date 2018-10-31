@@ -10,3 +10,21 @@ p{
         margin-bottom: 1rem;
     }
 }
+h1 {
+    &.display1{
+        font-size: $display1-size;
+        line-height: $display-line-height;
+    }
+    &.display2{
+        font-size: $display2-size;
+        line-height: $display-line-height;
+    }
+    &.display3{
+        font-size: $display3-size;
+        line-height: $display-line-height;
+    }
+    &.display3{
+        font-size: $display4-size;
+        line-height: $display-line-height;
+    }
+}

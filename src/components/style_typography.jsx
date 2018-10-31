@@ -39,13 +39,58 @@ export class StyleTypography extends React.Component{
                         
 
                         <hr className="chapter-sub-hr"/>
-                        <h4 className="system-chapter-subtitle">Headline<span> - Basic</span></h4>
-                        <h1>h1: 헤드라인 타이틀 Headline Title</h1>
-                        <h2>h2: 헤드라인 타이틀 Headline Title</h2>
-                        <h3>h3: 헤드라인 타이틀 Headline Title</h3>
-                        <h4>h4: 헤드라인 타이틀 Headline Title</h4>
-                        <h5>h5: 헤드라인 타이틀 Headline Title</h5>
-                        <h6>h6: 헤드라인 타이틀 Headline Title</h6>
+                        <h4 className="system-chapter-subtitle">Heading<span> - Basic</span></h4>
+                        <div className="spec-info-wrap">
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h1>H1</h1></div>
+                                <div className="table-cell no-border"><h1>헤드라인 타이틀 Headline Title</h1></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:2.5rem; line-height:1.25em;</div>
+                            </div>
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h2>H2</h2></div>
+                                <div className="table-cell no-border"><h2>헤드라인 타이틀 Headline Title</h2></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:2rem; line-height:1.25em;</div>
+                            </div>
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h3>H3</h3></div>
+                                <div className="table-cell no-border"><h3>헤드라인 타이틀 Headline Title</h3></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:1.75rem; line-height:1.25em;</div>
+                            </div>
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h4>H4</h4></div>
+                                <div className="table-cell no-border"><h4>헤드라인 타이틀 Headline Title</h4></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:1.5rem; line-height:1.25em;</div>
+                            </div>
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h5>H5</h5></div>
+                                <div className="table-cell no-border"><h5>헤드라인 타이틀 Headline Title</h5></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:1.3rem; line-height:1.25em;</div>
+                            </div>
+                            <div className="table-row">                                        
+                                <div className="table-cell no-border"><h6>H6</h6></div>
+                                <div className="table-cell no-border"><h6>헤드라인 타이틀 Headline Title</h6></div>
+                            </div>
+                            <div className="table-row">
+                                <div className="table-cell no-border">style</div>
+                                <div className="table-cell no-border">font-size:1rem; line-height:1.25em;</div>
+                            </div>
+                        </div>
+
                         <hr className="chapter-sub-hr"/>
                         <h4 className="system-chapter-subtitle">Paragraph Text<span> - Basic</span></h4>
                         <div className="row">

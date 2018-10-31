@@ -49,17 +49,24 @@ export class StyleGrid extends React.Component{
                             </p>
                         </div>
                         <hr className="chapter-sub-hr"/>
-                        <h4 className="system-chapter-subtitle">atlassian Design System Grid 예시</h4>
+                        <h4 className="system-chapter-subtitle">atlassian, shopify의 Grid 예시</h4>
                         <figure className="system-figure-wrap" >
                             <img src={require('../img/design_guide/grid_element_spacing.png')} id="grid-element-spacing" />
                         </figure>
                         <div className="row mt32">
                             <p className="col-md-8 offset-md-2">
-                                Design System의 대표적인 모범사례인 atlassian의 예시를 따라 버튼 및 버튼의 Spacing 등 요소들 사이의 여백
-                                공간 또한 8px,16px를 기본으로 사용한다. 보다 작은 여백이 필요할 경우에는 4px을 적용한다. 
+                                Design System의 대표적인 모범사례인 atlassian의 경우에는 버튼 및 버튼의 Spacing 등 요소들 사이의 여백
+                                공간 또한 8px,16px를 기본으로 사용한다. 보다 작은 여백이 필수적으로 필요할 경우에만 4px을 적용한다. 
+                                이 기본값은 가로,세로 여백 공간에 공통적으로 적용되어 전체 화면디자인에 일관성을 부여한다. 
                                 <br />
                                 <a href="https://atlassian.design/guidelines/product/foundations/grid" target="_blank">
                                     Atlassian Design System / Guideline / Grid
+                                </a><br /><br />
+                                또 다른 Design System의 모범사례인 Shopify의 경우에는 4px,8px,16px,20px을 Spacing의 기본 단위로
+                                사용하고 있다.
+                                <br />
+                                <a href="https://polaris.shopify.com/design/spacing#section-optical-adjustment" target="_blank">
+                                    Shopify Design System / Spacing
                                 </a>
                             </p>
                         </div>

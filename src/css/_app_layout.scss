@@ -67,6 +67,12 @@ img#grid-element-spacing { width: 723px; margin-top: 1rem;}
         .table-cell{
             height:1.25rem; display: table-cell; padding: 0.5rem 1rem;
             border-top:1px solid #bcbcbc;
+            &.no-border{
+                border-top:transparent;
+            }
+            h1,h2,h3,h4,h5,h6{
+                margin:1.5rem 0 0 0; line-height: 0.75em;
+            }
         }
     
     }
@@ -125,4 +131,12 @@ img#grid-element-spacing { width: 723px; margin-top: 1rem;}
 //shadow
 .shadow-10 {
     box-shadow: 2px 4px 12px rgba(0,0,0,0.075);
+}
+
+// Sample
+.sample-button-wrap{
+    padding:1rem 0;
+    button{
+        margin:0 0.25rem;
+    }
 }

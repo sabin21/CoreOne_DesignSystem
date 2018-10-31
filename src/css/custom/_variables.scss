@@ -47,7 +47,7 @@ $cyan:    #17a2b8 !default;
 
 $colors: () !default;
 $colors: map-merge((
-  "blue":       $blue,
+  "blue":       $pink,
   "indigo":     $indigo,
   "purple":     $purple,
   "pink":       $pink,
@@ -62,7 +62,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       $pink !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -251,16 +251,17 @@ $headings-font-weight:        400 !default;
 $headings-line-height:        1.25em !default;
 $headings-color:              inherit !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.5rem !default;
 
-$display1-weight:             300 !default;
-$display2-weight:             300 !default;
-$display3-weight:             300 !default;
-$display4-weight:             300 !default;
-$display-line-height:         $headings-line-height !default;
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.5rem;
+
+$display1-weight:             300;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         1em;
 
 $lead-font-size:              ($font-size-base * 1.25) !default;
 $lead-font-weight:            300 !default;
