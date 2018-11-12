@@ -2,7 +2,7 @@ Core ONE Design System
 ======================
 
 ### Changelog
-* Foundation- Sketch 파일 1차 완료 (2018.11.13)
+* Foundation- Sketch 파일 1차 완료 2018.11.13
 
 ****
 
