@@ -2,6 +2,7 @@ Core ONE Design System
 ======================
 
 ### Changelog
+* Foundation- Sketch 파일 1차 완료
 
 ### 1-1. Design System 이란?
 여러 Digital Product 제작과 운영과정에서 발생하는 불규칙성과 팀간의 기존의 Design Guide개념과
@@ -18,7 +19,7 @@ Core ONE Design System
 ****
 
 #### 사용툴 설정
-기본 에디터 : Visual Stuide Code
+기본 에디터 : Visual Studio Code
 
 UI Graphic Tool : Sketch 
 
