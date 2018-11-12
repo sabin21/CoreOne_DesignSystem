@@ -17,7 +17,6 @@ Core ONE Design System
 
 ****
 
-
 #### 사용툴 설정
 기본 에디터 : Visual Stuide Code
 
@@ -25,4 +24,13 @@ UI Graphic Tool : Sketch
 
 Sketch 필수 Plugin :  
 * Runner (https://sketchrunner.com/)  
-* Runner
+* inVision Craft (https://www.invisionapp.com/craft)
+
+Sketch 권장 Plugin :  
+* Runner (https://sketchrunner.com/)  
+* inVision Craft (https://www.invisionapp.com/craft)
+
+****
+
+#### 설치방법
+<pre>npm install</pre> 
