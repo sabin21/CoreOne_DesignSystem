@@ -18,3 +18,6 @@ Core ONE Design System
 ****
 #### 사용툴 설정
 기본 에디터 : Visual Stuide Code
+UI Graphic Tool : Sketch
+Sketch Plugin :
+- Runner
