@@ -33,4 +33,8 @@ Sketch 권장 Plugin :
 ****
 
 #### 설치방법
-<pre>npm install</pre> 
+stpe.01 : 시작하기 전에 본인의 시스템에 설치된 Node.js의 버전을 확인한다.
+<pre>npm install</pre>
+
+stpe.02 : 관련 package들이 제대로 설치되었는지 확인한 이후 아래 명령으로 Webpack-dev server을 시작한다.
+<pre>npm run start</pre>
