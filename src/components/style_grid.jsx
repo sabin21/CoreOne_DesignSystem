@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../css/style_sample.scss';
-
 export class StyleGrid extends React.Component{
     render(){
         return(

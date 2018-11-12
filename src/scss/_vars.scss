@@ -1,0 +1,122 @@
+
+@import './_colors.scss';
+
+/// Color System
+//
+$white: #fff;
+$black:#000;
+
+$p1-025:  #FFE8F2;
+$p1-050:  #FFB6CE;
+$p1-075:  #EF6694;
+$p1-100:  #DE1B6F;
+$p1-200:  #C20254;
+$p1-300:  #8D0753;
+$p1-400:  #620037;
+
+$p2-025:  #FFE8F2;
+$p2-050:  #FFB6CE;
+$p2-075:  #EF6694;
+$p2-100:  #DE1B6F;
+$p2-200:  #C20254;
+$p2-300:  #8D0753;
+$p2-400:  #620037;
+
+$ui-01:#fff;
+$ui-02:#F8FBFF;
+$ui-03:#E9EEF1;
+$ui-04:#D7DCE0;
+$ui-05:#5A6872;
+
+$text-base-01: #212529;
+$text-base-02: #495057;
+$text-base-03: #6F757C;
+$text-base-04: #CDD1D4;
+
+//
+
+$text-base-color :#596267;
+$text-base-color01 : $co-colors__cool-gray--80;
+
+$link-active:$p1-100;
+
+/// Spacing
+//
+
+$spacing-baseline: 1rem !default;
+
+$spacing-3xs: $spacing-baseline * 0.125 !default;
+$spacing-2xs: $spacing-baseline * 0.25 !default;
+$spacing-xs: $spacing-baseline * 0.5 !default;
+$spacing-sm: $spacing-baseline * 0.75 !default;
+$spacing-md: $spacing-baseline !default;
+$spacing-lg: $spacing-baseline * 1.5 !default;
+$spacing-xl: $spacing-baseline * 2 !default;
+$spacing-2xl: $spacing-baseline * 2.5 !default;
+$spacing-3xl: $spacing-baseline * 3 !default;
+
+$layout-2xs: $spacing-baseline !default;
+$layout-xs: $spacing-baseline * 1.5 !default;
+$layout-sm: $spacing-baseline * 2 !default;
+$layout-md: $spacing-baseline * 3 !default;
+$layout-lg: $spacing-baseline * 4 !default;
+$layout-xl: $spacing-baseline * 6 !default;
+$layout-2xl: $spacing-baseline * 10 !default;
+
+///Typography
+//
+
+$font-size-p-small: 14px;
+$font-size-p-tiny: 12px;
+
+
+// Display Typography
+
+$display1-size:               5rem !default;
+$display2-size:               4.5rem !default;
+$display3-size:               4rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             700 !default;
+$display2-weight:             700 !default;
+$display3-weight:             700 !default;
+$display4-weight:             700 !default;
+$display-line-height:         1.25em !default;
+
+/// etc
+//
+
+$border-radius: 4px !default;
+
+/// Components
+
+// article
+$article-head-height-full: 100vh;
+$article-head-height: 560px;
+
+//
+$btn-font-weight: 400;
+$btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out, 
+border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// Carousel
+
+$carousel-control-color:            #fff !default;
+$carousel-control-width:            15% !default;
+$carousel-control-opacity:          .5 !default;
+
+$carousel-indicator-width:          30px !default;
+$carousel-indicator-height:         3px !default;
+$carousel-indicator-spacer:         3px !default;
+$carousel-indicator-active-bg:      #fff !default;
+
+$carousel-caption-width:            70% !default;
+$carousel-caption-color:            #fff !default;
+
+$carousel-control-icon-width:       20px !default;
+
+$carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+$carousel-transition:               transform .6s ease !default;
+

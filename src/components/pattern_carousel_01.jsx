@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from "react-slick";
 
-import "../css/slick.css";
-import "../css/slick-theme.css";
+import "../scss/slick.css";
+import "../scss/slick-theme.css";
 
 class SimpleSlider extends React.Component {
   render() {
