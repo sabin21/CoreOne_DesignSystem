@@ -32,6 +32,9 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "carbon-components": "^9.48.2",
+    "carbon-components-react": "^6.48.0",
+    "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "express": "^4.16.3",
     "prop-types": "^15.6.2",
