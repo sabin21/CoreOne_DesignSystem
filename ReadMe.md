@@ -27,8 +27,8 @@ Sketch 필수 Plugin :
 * inVision Craft (https://www.invisionapp.com/craft)
 
 Sketch 권장 Plugin :  
-* Runner (https://sketchrunner.com/)  
-* inVision Craft (https://www.invisionapp.com/craft)
+* Shared Text Styles (https://github.com/nilshoenson/shared-text-styles)  
+* Rename It (https://rodi01.github.io/RenameIt/)
 
 ****
 
