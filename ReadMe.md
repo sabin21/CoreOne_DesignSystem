@@ -16,11 +16,13 @@ Core ONE Design System
     • Rapid Prototyping을 위한 디자인코드의 기반
 
 ****
+
+
 #### 사용툴 설정
 기본 에디터 : Visual Stuide Code
 
 UI Graphic Tool : Sketch 
 
-Sketch Plugin :  
-* Runner(https://sketchrunner.com/)  
+Sketch 필수 Plugin :  
+* Runner (https://sketchrunner.com/)  
 * Runner
