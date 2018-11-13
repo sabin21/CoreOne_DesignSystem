@@ -2,7 +2,7 @@ Core ONE Design System
 ======================
 
 ### Changelog
-* Foundation- Sketch 파일 1차 완료 2018.11.13
+* Design_System_Core.Sketch 파일 1차 완료. 2018.11.13
 
 ****
 
@@ -32,12 +32,16 @@ Sketch 필수 Plugin :
 Sketch 권장 Plugin :  
 * Shared Text Styles (https://github.com/nilshoenson/shared-text-styles)  
 * Rename It (https://rodi01.github.io/RenameIt/)
+* Strak (https://www.getstark.co/)
 
 ****
 
 #### 설치방법
-stpe.01 : 시작하기 전에 본인의 시스템에 설치된 Node.js의 버전을 확인한다.
+의존 Package 설치 : 시작하기 전에 본인의 시스템에 설치된 Node.js의 버전을 확인한다.
 <pre>npm install</pre>
 
-stpe.02 : 관련 package들이 제대로 설치되었는지 확인한 이후 아래 명령으로 Webpack-dev server을 시작한다.
+Webpack 개발서버 실행 : 관련 package들이 제대로 설치되었는지 확인한 이후 아래 명령으로 Webpack-dev server을 시작한다.
 <pre>npm run start</pre>
+
+Webpack 빌드 : 
+<pre>npm run build</pre>
