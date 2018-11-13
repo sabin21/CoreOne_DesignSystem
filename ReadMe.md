@@ -15,8 +15,9 @@ Core ONE Design System
     • Juniro급 Designer, Developer의 교육 역할  
 
 ### 1-3. Core ONE Design System의 역할
-	• Digital Product 제작을 위한 Design Style Guide 기초 규정
-    • Rapid Prototyping을 위한 디자인코드의 기반
+	• Digital Product 제작을 위한 Design Style Guide 기본 규정
+    • CSS Styles Framework 
+    • Rapid Prototyping을 위한 기본 Toolset
 
 ****
 
@@ -40,8 +41,13 @@ Sketch 권장 Plugin :
 의존 Package 설치 : 시작하기 전에 본인의 시스템에 설치된 Node.js의 버전을 확인한다.
 <pre>npm install</pre>
 
-Webpack 개발서버 실행 : 관련 package들이 제대로 설치되었는지 확인한 이후 아래 명령으로 Webpack-dev server을 시작한다.
+Webpack 개발서버 실행 : 관련 package들이 제대로 설치되었는지 확인한 이후 아래 명령으로 Webpack-dev server을 실행한다.
 <pre>npm run start</pre>
 
 Webpack 빌드 : 
 <pre>npm run build</pre>
+
+****
+
+#### 관련링크
+* Sketch Cloud (https://sketch.cloud/s/egjeP)
