@@ -1,17 +1,21 @@
 
-a{
+a{  
+    transition: color $duration-quick;
     &:active{
         color:$link-active;
     }
+    &:hover{
+        color: $black !important;
+    }
     &:visited{
-        color:darken($link-active, 20%);
+        color:$link-active;
     }
     &:focus{
-        color:#000; border:1px solid;
+        color:$p1-200; border:1px solid $p1-200;
     }
 }
 p{
-    color: $text-base-color01;
+    color: $text-base-02;
     &.small{
         font-size:$font-size-p-small;
         margin-bottom: 1.25rem;
