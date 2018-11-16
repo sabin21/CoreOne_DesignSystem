@@ -1,7 +1,7 @@
 
 .header-wrap{
-    position: absolute; display: flex; flex-direction: column;
-    width: 240px; height: 100%; top:0; left:0;
+    position: relative; display: flex; flex-direction: column; 
+    width: 240px; min-height: 100%; top:0; left:0;
     background-color: rgba(255,255,255,1); z-index: 10000;
     border-right: 1px solid #ccc;
 }    
@@ -27,23 +27,26 @@
     right:0;
 }
 .nav-submenu {
-    min-width: 4rem;
     position: relative; transition: all 0.5s ease; left: 0; width: 200px;
     background-color: #fff; 
     span {
-        display: block; height: 1rem;
+        display: block; height: 0.25rem;
     }
 }
           
 .gnb-menu-wrap li:hover > ul,
 .gnb-menu-wrap li:focus-within > ul,
 .gnb-menu-wrap li ul:hover,
-.gnb-menu-wrap li ul:focus {
-   
+.gnb-menu-wrap li ul:focus {   
    display: block;
 }
+.gnb-menu-wrap li {
+    a {
+        text-decoration: none;
+    }
+}
 .gnb-menu-wrap li ul li {
-    clear: both; width: 100%; line-height: 34px; font-size: 14px; padding:0 0 0 16px;
+    clear: both; width: 100%; line-height: 28px; font-size: 14px; padding:0 0 0 16px;
     &:hover, &:focus-within{
         color: black;
         background: rgba(0,0,0,0.05);

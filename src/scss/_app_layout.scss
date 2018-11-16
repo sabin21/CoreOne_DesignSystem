@@ -1,27 +1,28 @@
 .app-wrap{
-    width: 100%; min-height: 300px; height: auto;
-    display: flex;
+    width: 100%; min-height: 100vh; 
+    display: flex; align-items: stretch;
 }
 .page-wrap{
-    width: calc(100% - 240px); position: relative;
-    margin-left: 240px;
+    width: calc(100% - 240px); position: relative; 
     .content-wrap{
-        width: 100%; margin-top: 72px;
+        width: 100%; 
         &:before {
             clear: both; display: table; content:"";
+        }
+        .container.guide {
+            max-width: 840px;
         }
     }
 }
 
+//  Guide Style
+//
 
-
-/*  Guides Style =============*/
-/*======================================================*/
 .system-header{
-    width: 100%; height: 184px; margin: 0 0 3.5rem 0; border-bottom: 1px solid ;
-    background-color:$ui-01;
+    width: 100%; height: 194px; margin: 0 auto $layout-spacing-md auto; border-bottom: 1px solid $ui-04;
+    background-color:$ui-02;
     .system-chapter-title{
-        margin: 0 0 0.5rem 0; padding-top: 3.75rem;
+        margin: 0 0 0.5rem 0; padding-top: 4.75rem; 
         &:before, &:after {
             clear: both; display: block; content:"";
         }
@@ -29,7 +30,7 @@
             color: #9B9B9B;
         }
     }
-    p{ margin-top:-0.25rem; padding:0;}
+    p{ margin-top:-0.25rem; padding:0; line-height: $line-height-base; }
 }
 .system-chapter-subtitle{
     margin: 0 0 2.75rem 0; font-weight: 600; 

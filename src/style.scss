@@ -1,8 +1,9 @@
 
-@import './scss/_normalize.scss';
+
 @import './scss/bootstrap-grid.scss';
 
-@import './scss/globals/_vars.scss';
+@import './scss/globals/vars';
+@import './scss/globals/reboot';
 @import './scss/_app_layout.scss';
 @import './scss/_app_utilities.scss';
 @import './scss/_typography.scss';
@@ -14,7 +15,11 @@
 @import './components/action_bar/_article_actionbar.scss';
 
 
-
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
 *, *:before, *:after{
     box-sizing: border-box;
     margin:0; padding:0;
@@ -26,3 +31,9 @@ ol, ul { list-style: none;}
 
     }
 }
+hr {
+    border : 0;
+    height : 1px;
+    background-color:$ui-04;
+    margin : 1rem 0;
+    }

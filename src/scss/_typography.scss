@@ -1,21 +1,23 @@
 
 a{  
-    transition: color $duration-quick;
+    color:$link-active;
+    transition: color $duration-quick;    
     &:active{
         color:$link-active;
     }
     &:hover{
-        color: $black !important;
+        color: $text-base-01 !important;
     }
     &:visited{
         color:$link-active;
     }
     &:focus{
-        color:$p1-200; border:1px solid $p1-200;
+        color:$p1-200; border:1px solid $p1-100;
     }
 }
+
 p{
-    color: $text-base-02;
+    font-size:$font-size-base; line-height: 1.75em; color: $text-base-02;
     &.small{
         font-size:$font-size-p-small;
         margin-bottom: 1.25rem;
@@ -25,21 +27,47 @@ p{
         margin-bottom: 1rem;
     }
 }
-h1 {
-    &.display1{
-        font-size: $display1-size;
-        line-height: $display-line-height;
-    }
-    &.display2{
-        font-size: $display2-size;
-        line-height: $display-line-height;
-    }
-    &.display3{
-        font-size: $display3-size;
-        line-height: $display-line-height;
-    }
-    &.display3{
-        font-size: $display4-size;
-        line-height: $display-line-height; 
-    }
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  letter-spacing: $base-letterspacing;
+}
+
+h1, .h1 { font-size: $h1-font-size; }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size; }
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
+
+
+// Type display classes
+.display-1 {
+  font-size: $display1-size;
+  font-weight: $display1-weight;
+  line-height: $display-line-height;
+}
+.display-2 {
+  font-size: $display2-size;
+  font-weight: $display2-weight;
+  line-height: $display-line-height;
+}
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+  line-height: $display-line-height;
+}
+.display-4 {
+  font-size: $display4-size;
+  font-weight: $display4-weight;
+  line-height: $display-line-height;
 }

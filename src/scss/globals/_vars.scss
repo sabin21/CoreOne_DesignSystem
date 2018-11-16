@@ -1,11 +1,16 @@
 
 @import './_colors.scss';
 
-/// Color System
+// Variables
 //
 
-$white: #fff;
-$black:#000;
+
+//
+// Color System
+//
+
+$white: #fff !default;
+$black:#000 !default;
 
 $p1-025:  #FFE8F2;
 $p1-050:  #FFB6CE;
@@ -24,7 +29,7 @@ $p2-300:  #DC1900;
 $p2-400:  #8C1800;
 
 $ui-01:#fff;
-$ui-02:#F8FBFF;
+$ui-02:#F8F9FA;
 $ui-03:#E9EEF1;
 $ui-04:#D7DCE0;
 $ui-05:#5A6872;
@@ -39,12 +44,38 @@ $info: $co-colors__cyan-080;
 $warning: $co-colors__yellow-080;
 $danger: $co-colors__red-100;
 
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+// yiq contrast 함수의 분기점이 되는 역치값 설정
+$yiq-contrasted-threshold: 150 !default;
+
+// yiq contrast 함수를 사용하여 변경되는 어두운 텍스트 색상과 밝은 텍스트 색상 설정
+$yiq-text-dark: $text-base-01 !default;
+$yiq-text-light: $white !default;
+
+
+// Links
 //
+// Style anchor elements.
+
+$link-color:                $p1-100 !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+$link-active:$p1-100 !default;
 
 
-$link-active:$p1-100;
-
-/// Spacing
+// Spacing
+//
 //
 
 $spacing-baseline: 1rem !default;
@@ -65,16 +96,46 @@ $layout-spacing-sm: $spacing-baseline * 2 !default;
 $layout-spacing-md: $spacing-baseline * 3 !default;
 $layout-spacing-lg: $spacing-baseline * 4 !default;
 $layout-spacing-xl: $spacing-baseline * 6 !default;
-$layout-spacing-2xl: $spacing-baseline * 10 !default;
+$layout-spacing-2xl: $spacing-baseline * 8 !default;
+$layout-spacing-3xl: $spacing-baseline * 10 !default;
 
-///Typography
+
+// Typography
 //
+//
+
+$font-family-sans-serif:      "Noto Sans CJK","Malgun Gothic","AppleSDGothicNeo","Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              1rem !default;
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5em !default;
+
+$font-size-base:              1rem !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.3 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      $spacing-md !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        400 !default;
+$headings-line-height:        1.25em !default;
+$headings-color:              inherit !default;
 
 $font-size-p-small: 14px;
 $font-size-p-tiny: 12px;
-
-
-// Display Typography
 
 $display1-size:               5rem !default;
 $display2-size:               4.5rem !default;
@@ -86,6 +147,36 @@ $display2-weight:             700 !default;
 $display3-weight:             700 !default;
 $display4-weight:             700 !default;
 $display-line-height:         1.25em !default;
+
+$base-letterspacing:          -0.025em;
+
+$paragraph-margin-bottom: 1rem;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+
+$table-bg:                    transparent !default;
+$table-accent-bg:             rgba($black, .05) !default;
+$table-hover-bg:              rgba($black, .075) !default;
+$table-active-bg:             $table-hover-bg !default;
+
+$table-border-width:          1px !default;
+$table-border-color:          $gray-200 !default;
+
+$table-head-bg:               $gray-200 !default;
+$table-head-color:            $gray-700 !default;
+
+$table-dark-bg:               $gray-900 !default;
+$table-dark-accent-bg:        rgba($white, .05) !default;
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     lighten($gray-900, 7.5%) !default;
+
+
 
 /// Motion
 //
