@@ -61,6 +61,13 @@ $yiq-contrasted-threshold: 150 !default;
 $yiq-text-dark: $text-base-01 !default;
 $yiq-text-light: $white !default;
 
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white !default;
+$body-color:                $gray-900 !default;
+
 
 // Links
 //
@@ -80,25 +87,47 @@ $link-active:$p1-100 !default;
 
 $spacing-baseline: 1rem !default;
 
-$spacing-3xs: $spacing-baseline * 0.125 !default;
-$spacing-2xs: $spacing-baseline * 0.25 !default;
-$spacing-xs: $spacing-baseline * 0.5 !default;
-$spacing-sm: $spacing-baseline * 0.75 !default;
-$spacing-md: $spacing-baseline !default;
-$spacing-lg: $spacing-baseline * 1.5 !default;
-$spacing-xl: $spacing-baseline * 2 !default;
-$spacing-2xl: $spacing-baseline * 2.5 !default;
-$spacing-3xl: $spacing-baseline * 3 !default;
 
-$layout-spacing-2xs: $spacing-baseline !default;
-$layout-spacing-xs: $spacing-baseline * 1.5 !default;
-$layout-spacing-sm: $spacing-baseline * 2 !default;
-$layout-spacing-md: $spacing-baseline * 3 !default;
-$layout-spacing-lg: $spacing-baseline * 4 !default;
-$layout-spacing-xl: $spacing-baseline * 6 !default;
-$layout-spacing-2xl: $spacing-baseline * 8 !default;
-$layout-spacing-3xl: $spacing-baseline * 10 !default;
 
+$spacing-01: $spacing-baseline * 0.125 !default;
+$spacing-02: $spacing-baseline * 0.25 !default;
+$spacing-03: $spacing-baseline * 0.5 !default;
+$spacing-04: $spacing-baseline * 0.75 !default;
+$spacing-05: $spacing-baseline !default;
+$spacing-06: $spacing-baseline * 1.5 !default;
+$spacing-07: $spacing-baseline * 2 !default;
+$spacing-08: $spacing-baseline * 2.5 !default;
+$spacing-09: $spacing-baseline * 3 !default;
+$spacing-10: $spacing-baseline * 3.5 !default;
+
+$layout-01: $spacing-baseline !default;
+$layout-02: $spacing-baseline * 1.5 !default;
+$layout-03: $spacing-baseline * 2 !default;
+$layout-04: $spacing-baseline * 3 !default;
+$layout-05: $spacing-baseline * 4 !default;
+$layout-06: $spacing-baseline * 5.5 !default;
+$layout-07: $spacing-baseline * 8 !default;
+$layout-08: $spacing-baseline * 10 !default;
+$layout-09: $spacing-baseline * 12 !default;
+
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+) !default;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+) !default;
 
 // Typography
 //
@@ -128,7 +157,7 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.3 !default;
 $h6-font-size:                $font-size-base !default;
 
-$headings-margin-bottom:      $spacing-md !default;
+$headings-margin-bottom:      $spacing-05 !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.25em !default;
@@ -166,7 +195,7 @@ $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          1px !default;
-$table-border-color:          $gray-200 !default;
+$table-border-color:          $ui-03 !default;
 
 $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;

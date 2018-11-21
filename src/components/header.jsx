@@ -1,9 +1,7 @@
 import React from 'react';
 import { HashRouter as Router,Route, NavLink, Switch } from 'react-router-dom';
 
-import Loadable from 'react-loadable';
 import Home from './home.jsx';
-import StyleGrid from './style_grid.jsx';
 import StyleTypography from './style_typography.jsx';
 import StyleColor from './style_color.jsx';
 import StyleIcon from './style_icon.jsx';
@@ -13,16 +11,14 @@ import CarouselSample from './sample_carousel.jsx';
 import CardSample01 from './sample_card01.jsx';
 import BtnSample01 from './sample_btn01.jsx';
 
+import DocFoundGrid from './doc/doc_found_grid';
+import DocFoundMotion from './doc/doc_found_motion';
+import DocFoundLayer from './doc/doc_found_layer';
+import DocFoundType from './doc/doc_found_type';
+
 import CarouselPattern01 from './pattern_carousel_01.jsx';
 import HeadPattern01 from './pattern_head_01.jsx';
 
-/*
-const Loading = () => <div>Loading...</div>;
-const Style = Loadable({
-    loader: () => import('./style.jsx'),
-    loading: Loading
-  });
-*/
 
 export class HeaderMenu extends React.Component {
     render(){
@@ -31,7 +27,7 @@ export class HeaderMenu extends React.Component {
                 <ul className="gnb-menu-wrap">
                     <li className="gnb-menu"><NavLink to={"/"}>Home</NavLink></li>
                     <li className="gnb-menu">
-                        <NavLink to={"/style_grid"} className="gnb-link">Style</NavLink>
+                        <NavLink to={"/style_grid"} className="gnb-link">Foundation</NavLink>
                         <SubmenuStyle />                                                                    
                     </li>
                     <li className="gnb-menu">
@@ -53,10 +49,13 @@ class SubmenuStyle extends React.Component{
         return(            
             <ul className="nav-submenu">
                 <li className="nav-submenu-link">
-                    <NavLink to={"/style_grid"}>Grid</NavLink>
+                    <NavLink to={"/found_grid"}>Grid</NavLink>
                 </li>
                 <li className="nav-submenu-link">
                     <NavLink to={"/style_typography"}>Typography</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/found_type"}>Typography</NavLink>
                 </li>
                 <li className="nav-submenu-link">
                     <NavLink to={"/style_color"}>Color System</NavLink>
@@ -64,7 +63,12 @@ class SubmenuStyle extends React.Component{
                 <li className="nav-submenu-link">
                     <NavLink to={"/style_icon"}>Iconography</NavLink>
                 </li>
-                <span></span>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/found_motion"}>Motion</NavLink>
+                </li>
+                <li className="nav-submenu-link">
+                    <NavLink to={"/found_layer"}>Layer</NavLink>
+                </li>
             </ul>            
         );
     }
@@ -132,10 +136,13 @@ export class Header extends React.Component{
                     <HeaderMenu />
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route path="/style_grid" component={StyleGrid} />
+                        <Route path="/found_grid" component={DocFoundGrid} />
                         <Route path="/style_typography" component={StyleTypography} />
                         <Route path="/style_color" component={StyleColor} />
                         <Route path="/style_icon" component={StyleIcon} />
+                        <Route path="/found_motion" component={DocFoundMotion} />
+                        <Route path="/found_layer" component={DocFoundLayer} />
+                        <Route path="/found_type" component={DocFoundType} />
                         <Route path="/accordion_sample" component={AccordionSample} />
                         <Route path="/carousel_sample" component={CarouselSample} />
                         <Route path="/card_sample01" component={CardSample01} />

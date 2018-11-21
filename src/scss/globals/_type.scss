@@ -1,33 +1,3 @@
-
-a{  
-    color:$link-active;
-    transition: color $duration-quick;    
-    &:active{
-        color:$link-active;
-    }
-    &:hover{
-        color: $text-base-01 !important;
-    }
-    &:visited{
-        color:$link-active;
-    }
-    &:focus{
-        color:$p1-200; border:1px solid $p1-100;
-    }
-}
-
-p{
-    font-size:$font-size-base; line-height: 1.75em; color: $text-base-02;
-    &.small{
-        font-size:$font-size-p-small;
-        margin-bottom: 1.25rem;
-    }
-    &.tiny{
-        font-size:$font-size-p-tiny;
-        margin-bottom: 1rem;
-    }
-}
-
 //
 // Headings
 //
@@ -71,3 +41,50 @@ h6, .h6 { font-size: $h6-font-size; }
   font-weight: $display4-weight;
   line-height: $display-line-height;
 }
+
+//
+// Type Size Scale
+//
+
+.type-size-01{ font-size: 0.625rem; }
+.type-size-02{ font-size: 0.75rem; }
+.type-size-03{ font-size: 0.875rem; }
+.type-size-04{ font-size: 1rem; }
+.type-size-05{ font-size: 1.125rem; }
+.type-size-06{ font-size: 1.25rem; }
+.type-size-07{ font-size: 1.5rem; }
+.type-size-08{ font-size: 1.75rem; }
+.type-size-09{ font-size: 2rem; }
+.type-size-10{ font-size: 2.25rem; }
+.type-size-11{ font-size: 2.5rem; }
+
+
+a{  
+    color:$link-active;
+    transition: color $duration-quick;    
+    &:active{
+        color:$link-active;
+    }
+    &:hover{
+        color: $text-base-01 !important;
+    }
+    &:visited{
+        color:$link-active;
+    }
+    &:focus{
+        color:$p1-200; border:1px solid $p1-100;
+    }
+}
+
+p{
+    font-size:$font-size-base; line-height: 1.75em; color: $text-base-02;
+    &.small{
+        font-size:$font-size-p-small;
+        margin-bottom: 1.25rem;
+    }
+    &.tiny{
+        font-size:$font-size-p-tiny;
+        margin-bottom: 1rem;
+    }
+}
+

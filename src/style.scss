@@ -1,20 +1,23 @@
 
 
-@import './scss/bootstrap-grid.scss';
+@import "./scss/bootstrap-grid.scss";
 
-@import './scss/globals/vars';
-@import './scss/globals/reboot';
-@import './scss/_app_layout.scss';
-@import './scss/_app_utilities.scss';
-@import './scss/_typography.scss';
-@import './scss/_side_header.scss';
-@import './scss/style_sample.scss';
-@import './scss/_carousel.scss';
+@import "./scss/globals/vars";
+@import "./scss/globals/mixins";
+@import "./scss/globals/reboot";
+@import "./scss/globals/tables";
+@import "./scss/globals/type";
 
-@import './components/head/_article_head.scss';
-@import './components/action_bar/_article_actionbar.scss';
+@import "./scss/_app_layout.scss";
+@import "./scss/_app_layout.scss";
+@import "./scss/_app_utilities.scss";
+@import "./scss/_side_header.scss";
+@import "./scss/_carousel.scss";
 
+@import "./components/head/_article_head.scss";
+@import "./components/action_bar/_article_actionbar.scss";
 
+/*
 html,
 body {
   width: 100%;
@@ -37,3 +40,4 @@ hr {
     background-color:$ui-04;
     margin : 1rem 0;
     }
+    */
