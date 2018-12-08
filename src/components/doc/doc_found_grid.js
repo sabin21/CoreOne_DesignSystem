@@ -38,7 +38,7 @@ export class DocFoundGird extends React.Component{
                         <div className="row">
                         <h6 className="title-3th">Spacing Scale</h6>
                         <p>Spacing Scale는 세부적인 컴포넌트 사이의 간격 또는 작은 UI 의 기본 Padding,Margin 값에 적용하는 용도로 사용한다. 이는 미세한 간격조절을 통일시키기 위한 것이기 때문에 2~4px의 작은 단위로 시작하여 기본 Metric 단위인 8px을 세분하여 사용한다.</p>
-                        <table class="table">
+                        <table className="table">
                             <thead>
                                 <tr>
                                 <th scope="col">Token</th>
@@ -115,7 +115,7 @@ export class DocFoundGird extends React.Component{
                         <div className="row">
                         <h6 className="title-3th">Layout Spacing Scale</h6>
                         <p>Layput Spacing은 말그대로 전체 화면의 레이아웃의 기준을 삼기위한 용도로 사용되며 Container 사이의 간격 등 큰 레이아웃에 사용되므로 최소 16px에서 시작하여 8의 배수로 커지게 설정한다. </p>
-                        <table class="table">
+                        <table className="table">
                             <thead>
                                 <tr>
                                 <th scope="col">Token</th>

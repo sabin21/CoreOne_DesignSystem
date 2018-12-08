@@ -1,0 +1,54 @@
+
+  .#{$prefix}--radio-button-group {
+    display: flex;
+    align-items: center;
+    margin-top: $spacing-xs;
+  }
+
+  .#{$prefix}--radio-button {
+    @include hidden;
+    visibility: unset;
+  }
+
+  .#{$prefix}--radio-button__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: $spacing-md;
+  }
+
+  .#{$prefix}--radio-button__appearance {
+    background-color: $inverse-01;
+    border-radius: 50%;
+    border: $radio-border-width solid $ui-05;
+    flex-shrink: 0;
+    height: 18px;
+    width: 18px;
+    margin-right: $spacing-xs;
+  }
+
+  .#{$prefix}--radio-button:checked + .#{$prefix}--radio-button__label .#{$prefix}--radio-button__appearance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: $brand-01;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: $brand-01;
+    }
+  }
+
+  .#{$prefix}--radio-button:disabled + .#{$prefix}--radio-button__label {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .#{$prefix}--radio-button:focus + .#{$prefix}--radio-button__label .#{$prefix}--radio-button__appearance {
+    @include focus-outline('blurred');
+  }

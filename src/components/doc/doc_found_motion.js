@@ -42,7 +42,7 @@ export class DocFoundMotion extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                                 <thead>
                                     <tr>
                                     <th scope="col">Type</th>
@@ -90,7 +90,7 @@ export class DocFoundMotion extends React.Component{
                             </div>
                         </div>
 
-                        <div className="row" style={{'margin-top':'2rem'}}>
+                        <div className="row" style={{'marginTop':'2rem'}}>
                             <img src={require('../../img/design_guide/easing_02.png')} className="col col2-img" />
                             <div className="col col2-block">
                                 <h6 className="title-3th">Ease-Out</h6>
@@ -101,7 +101,7 @@ export class DocFoundMotion extends React.Component{
                             </div>
                         </div>
 
-                        <div className="row" style={{'margin-top':'2rem'}}>
+                        <div className="row" style={{'marginTop':'2rem'}}>
                             <img src={require('../../img/design_guide/easing_03.png')} className="col col2-img" />
                             <div className="col col2-block">
                                 <h6 className="title-3th">Ease-In</h6>

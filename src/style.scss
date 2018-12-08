@@ -1,43 +1,41 @@
 
-
+// Bootstrap 4.0 반응형 그리드 적용
 @import "./scss/bootstrap-grid.scss";
 
+// reset,scss변수, 믹스인 등 공통 SCSS 기능 및 기본 Style 설정
+@import "./scss/globals/css-reset";
 @import "./scss/globals/vars";
 @import "./scss/globals/mixins";
 @import "./scss/globals/reboot";
 @import "./scss/globals/tables";
 @import "./scss/globals/type";
+@import "./scss/globals/functions";
+@import "./scss/globals/typography";
+@import "./scss/globals/mixins/helper_mixins";
 
+// Components 스타일 설정
+@import "./scss/components/accordion";
+@import "./scss/components/breadcrumb";
+@import "./scss/components/form";
+@import "./scss/components/buttons";
+@import "./scss/components/checkbox";
+@import "./scss/components/radio-button";
+@import "./scss/components/link";
+@import "./scss/components/list";
+@import "./scss/components/inline-notification";
+@import "./scss/components/text-input";
+
+// Design System Site 스타일 설정
 @import "./scss/_app_layout.scss";
 @import "./scss/_app_layout.scss";
 @import "./scss/_app_utilities.scss";
 @import "./scss/_side_header.scss";
 @import "./scss/_carousel.scss";
 
+// Design Patterns 관련 스타일
 @import "./components/head/_article_head.scss";
 @import "./components/action_bar/_article_actionbar.scss";
 
-/*
-html,
-body {
-  width: 100%;
-  min-height: 100%;
-}
-*, *:before, *:after{
-    box-sizing: border-box;
-    margin:0; padding:0;
-}
-ol, ul { list-style: none;}
-.container {
-    
-    .row{
+// Code Highlighter Style - Highlighter.js 스타일 설정
+@import "./scss/github.css";
 
-    }
-}
-hr {
-    border : 0;
-    height : 1px;
-    background-color:$ui-04;
-    margin : 1rem 0;
-    }
-    */

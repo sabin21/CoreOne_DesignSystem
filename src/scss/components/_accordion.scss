@@ -1,0 +1,99 @@
+
+
+  .#{$prefix}--accordion {
+    @include font-family;
+    list-style: none;
+    width: 100%;
+  }
+
+  .#{$prefix}--accordion__item {
+    transition: all .3s;
+    border-top: 1px solid $ui-03;
+    overflow: hidden;
+
+    &:focus {
+      outline: none;
+
+      .#{$prefix}--accordion__arrow {
+        //@include focus-outline('border');
+        overflow: visible; // safari fix
+        outline-offset: -0.5px; // safari fix
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $ui-03;
+    }
+    p{
+      margin:0;
+    }
+  }
+
+  .#{$prefix}--accordion__heading {
+    @include button-reset;
+    color: $text-base-01;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    cursor: pointer;
+    padding: $spacing-xs 0;
+
+    &:focus {
+      outline: none;
+
+      .#{$prefix}--accordion__arrow {
+        //@include focus-outline('border');
+        overflow: visible; // safari fix
+        outline-offset: -0.5px; // safari fix
+      }
+    }
+  }
+
+  .#{$prefix}--accordion__arrow {
+    transition: all 0.3s;
+    height: 1.25rem;
+    width: 1.25rem;
+    padding: $spacing-2xs $spacing-3xs $spacing-2xs $spacing-2xs;
+    //margin: $spacing-2xs;
+    fill: $ui-05;
+    transform: rotate(0);
+  }
+
+  .#{$prefix}--accordion__title {
+    @include typescale('base');
+    line-height:1;
+    margin: $spacing-xs;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .#{$prefix}--accordion__content {
+    transition: all .3s;
+    padding: 0 1.25rem;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    p {
+      @include typescale('base-s1');
+    }
+  }
+
+  .#{$prefix}--accordion__item--active {
+    overflow: visible;
+
+    > .#{$prefix}--accordion__content {
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-lg;
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      transition: all .3s;
+    }
+
+    > .#{$prefix}--accordion__heading > .#{$prefix}--accordion__arrow {
+      /*rtl:ignore*/
+      transform: rotate(90deg);
+      fill: $brand-01;
+    }
+  }

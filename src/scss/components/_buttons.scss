@@ -1,0 +1,97 @@
+
+//
+// Base styles
+//
+
+button.#{$prefix}-btn {
+    
+    @include button-base;
+    
+    
+    &:focus{
+      outline: none;
+    }
+    
+
+    &.#{$prefix}-btn-primary{
+      @include button-theme($p1-100, transparent, $white, $p1-200, $ui-01);
+    }
+    &.#{$prefix}-btn-secondary {
+      @include button-theme(transparent, $p1-100, $p1-100, $p1-200, $p1-100);
+  
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+  
+      &:active {
+        color: $p1-100;
+      }
+  
+      &:hover > .#{$prefix}-btn_icon,
+      &:focus > .#{$prefix}-btn_icon {
+        fill: $white;
+      }
+  
+      &:hover:disabled,
+      &:focus:disabled {
+        color: $p1-100;
+      }
+    }
+
+    &.#{$prefix}-btn-tertiary {
+      @include button-theme(transparent, $ui-05, $ui-05, $ui-05, $ui-05);
+  
+      &:hover,
+      &:focus {
+        color: $inverse-01;
+      }
+  
+      &:active {
+        color: $ui-05;
+      }
+  
+      &:hover:disabled,
+      &:focus:disabled {
+        color: $ui-05;
+      }
+  
+      &:hover > .#{$prefix}-btn_icon,
+      &:focus > .#{$prefix}-btn_icon {
+        fill: $inverse-01;
+      }
+    }
+  
+    &.#{$prefix}-btn-ghost {
+      @include button-theme(transparent, transparent, $brand-01, $brand-01, $brand-01);
+  
+      &:hover,
+      &:focus {
+        color: $inverse-01;
+  
+        .#{$prefix}-btn_icon {
+          fill: $inverse-01;
+        }
+      }
+  
+      &:active {
+        color: $ui-05;
+      }
+  
+      .#{$prefix}-btn_icon {
+        margin-left: $spacing-03;
+      }
+  
+      &:hover:disabled,
+      &:focus:disabled {
+        color: $brand-01;
+  
+        &.#{$prefix}-btn_icon {
+          fill: $brand-01;
+        }
+      }
+  
+    
+}
+}
+

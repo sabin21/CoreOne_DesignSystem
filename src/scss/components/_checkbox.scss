@@ -1,0 +1,148 @@
+
+
+.#{$prefix}--form-item.#{$prefix}--checkbox-wrapper {
+    margin-bottom: $spacing-xs;
+    line-height: 1.25rem;
+
+    &:first-of-type {
+      margin-top: $spacing-xs;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .#{$prefix}--checkbox {
+    @include hidden;
+  }
+
+  .#{$prefix}--checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: $spacing-06;
+    min-height: 1rem;
+  }
+  .#{$prefix}--checkbox-label::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 9px);
+    height: 18px;
+    width: 18px;
+    border: $checkbox-border-width solid $ui-05;
+    background-color: $ui-01;
+  }
+
+  .#{$prefix}--checkbox-label::after {
+    box-sizing: border-box;
+    content: '';
+    width: 9px;
+    height: 5px;
+    background: none;
+    /*rtl:ignore*/
+    border-left: 1px solid $inverse-01;
+    border-bottom: 1px solid $inverse-01;
+    /*rtl:ignore*/
+    transform: scale(0) rotate(-45deg);
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -3px;
+  }
+  
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-label::before,
+  .#{$prefix}--checkbox:indeterminate + .#{$prefix}--checkbox-label::before,
+  .#{$prefix}--checkbox-label[data-contained-checkbox-state='true']::before,
+  .#{$prefix}--checkbox-label[data-contained-checkbox-state='mixed']::before {
+    background-color: $brand-01;
+    border-color: $brand-01;
+  }
+
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-label::after,
+  .#{$prefix}--checkbox-label[data-contained-checkbox-state='true']::after {
+    opacity: 1;
+    transform: scale(1) rotate(-45deg);
+  }
+
+  .#{$prefix}--checkbox:not(:checked) + .#{$prefix}--checkbox-label::after {
+    opacity: 0;
+    transform: scale(0) rotate(-45deg);
+  }
+
+  .#{$prefix}--checkbox:focus + .#{$prefix}--checkbox-label::before,
+  .#{$prefix}--checkbox-label_focus::before {
+    @include focus-outline('blurred');
+  }
+
+  // Indeterminate dash
+  .#{$prefix}--checkbox:indeterminate + .#{$prefix}--checkbox-label::after,
+  .#{$prefix}--checkbox-label[data-contained-checkbox-state='mixed']::after {
+    transform: scale(1) rotate(0deg);
+    /*rtl:ignore*/
+    border-left: 0 solid $inverse-01;
+    border-bottom: 2px solid $inverse-01;
+    opacity: 1;
+    width: 10px;
+    margin-top: -4px;
+    left: 4px;
+  }
+
+  //Disabled
+  .#{$prefix}--checkbox:disabled + .#{$prefix}--checkbox-label,
+  .#{$prefix}--checkbox:disabled ~ .#{$prefix}--checkbox-label-text,
+  .#{$prefix}--checkbox-label[data-contained-checkbox-disabled='true'] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .#{$prefix}---checkbox-appearance {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 9px);
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: $spacing-02;
+    background-color: $ui-01;
+    border: $checkbox-border-width solid $ui-05;
+    min-width: 18px;
+  }
+
+  // Backwards compatibilty for old checkbox html using .#{$prefix}---checkbox-appearance
+  .#{$prefix}---checkbox:checked + .#{$prefix}---checkbox-label .#{$prefix}---checkbox-appearance {
+    top: -1px;
+  }
+
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-appearance,
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-label .#{$prefix}--checkbox-appearance {
+    display: flex;
+    align-items: baseline;
+    background-color: $brand-01;
+    border-color: $brand-01;
+  }
+
+  .#{$prefix}--checkbox:focus + .#{$prefix}--checkbox-label .#{$prefix}--checkbox-appearance,
+  .#{$prefix}--checkbox:focus + .#{$prefix}--checkbox-appearance {
+    @include focus-outline('blurred');
+  }
+
+  .#{$prefix}--checkbox:disabled + .#{$prefix}--checkbox-appearance {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .#{$prefix}--checkbox-checkmark {
+    display: none;
+    fill: $inverse-01;
+    width: 100%;
+    height: 100%;
+  }
+
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-appearance .#{$prefix}--checkbox-checkmark,
+  .#{$prefix}--checkbox:checked + .#{$prefix}--checkbox-label .#{$prefix}--checkbox-appearance .#{$prefix}--checkbox-checkmark {
+    display: block;
+
+  }

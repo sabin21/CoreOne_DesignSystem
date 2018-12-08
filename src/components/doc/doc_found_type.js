@@ -16,7 +16,7 @@ export class DocFoundType extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                             <caption className="caption">한국어  >  Gothic계열</caption>
                                 <thead>
                                     <tr>
@@ -42,7 +42,7 @@ export class DocFoundType extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                             <caption className="caption">English  >  San-serif</caption>
                                 <thead>
                                     <tr>
@@ -83,7 +83,7 @@ export class DocFoundType extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">px</th>
@@ -174,7 +174,7 @@ export class DocFoundType extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                                 <thead>
                                     <tr>
                                     <th scope="col">Line Height</th>
@@ -206,7 +206,7 @@ export class DocFoundType extends React.Component{
                         </div>
 
                         <div className="row">
-                            <table class="table">
+                            <table className="table">
                                 <thead>
                                     <tr>
                                     <th scope="col">Token</th>

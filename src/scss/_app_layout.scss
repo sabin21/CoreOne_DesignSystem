@@ -3,7 +3,7 @@
     display: flex; align-items: stretch;
 }
 .page-wrap{
-    width: calc(100% - 240px); position: relative; word-break: keep-all;
+    width: calc(100% - 220px); position: relative; word-break: keep-all;
     .content-wrap{
         width: 100%; 
         &:before {
@@ -218,6 +218,31 @@ img#grid-element-spacing { width: 723px; margin-top: 1rem;}
             margin-bottom:0;
             &.small { line-height: 1.25rem; }
         }
+    }
+}
+.component-example{
+    width: 100%; 
+    .example-box{
+        width: 100%; height:auto; min-height: 200px; display: flex; justify-content:center; 
+        align-items:center;
+        background-color:#F9FBFB; border:1px solid $ui-04;
+        padding: 2rem 0;
+        .inner-wrap{
+            width: 70%; height: 100%;  margin:2rem;
+        }
+        
+        &.column{
+            flex-direction: column;
+        }
+        button {
+            margin:0 .75rem;
+        }
+        .#{$prefix}--text-input-wrapper{
+            margin-bottom: 2rem;
+        }
+    }
+    .example-code{
+        border:1px solid $ui-04; border-top:0px;
     }
 }
 

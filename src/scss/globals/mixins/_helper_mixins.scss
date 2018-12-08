@@ -1,0 +1,105 @@
+
+@mixin text-overflow($width: false) {
+  display: block;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  // apply a width if width parameter exists
+  @if ($width) {
+    width: $width;
+  }
+}
+
+@mixin placeholder-colors {
+  color: $text-base-03;
+}
+
+@mixin box-shadow($size: 'small') {
+  // Large - For dropdowns
+  @if ($size == 'large') {
+    box-shadow: 6px 6px 6px 0 $box-shadow;
+  }
+
+  @if ($size == 'small') {
+    box-shadow: 0px 3px 3px 0 $box-shadow;
+  }
+}
+
+@mixin focus-outline($type: 'border') {
+  @if ($type == 'border') {
+    outline: 1px solid $brand-01;
+  }
+
+  @if ($type == 'blurred') {
+    box-shadow: 0 0 0 3px $focus;
+    outline: 1px solid transparent;
+  }
+
+  @if ($type == 'outline') {
+    outline: 2px solid $brand-01;
+    outline-offset: -2px;
+  }
+
+  @if ($type == 'invalid') {
+    outline: 2px solid $support-01;
+    outline-offset: -2px;
+  }
+
+  @if ($type == 'reset') {
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+  }
+}
+
+@mixin rotate($deg, $speed, $origin: center) {
+  transform: rotate($deg);
+  transition: transform $speed;
+  transform-origin: $origin;
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+@mixin button-reset($width: true) {
+  display: inline-block;
+  background: none;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  @if ($width == true) {
+    width: 100%;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+/**
+ * Generic `deprecate` mixin that is being used to indicate that a component is
+ * no longer going to be present in the next major release of Carbon.
+ */
+@mixin deprecate($reason) {
+  $deprecations--entry: false !default;
+
+  @if ($deprecations--entry == true) {
+    $deprecations--reasons: append($deprecations--reasons, $reason) !global;
+    @content;
+  } @else {
+    @warn 'Deprecated code was found, this code will be removed before the next release of Carbon. REASON: #{$reason}';
+    @content;
+  }
+}

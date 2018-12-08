@@ -1,0 +1,97 @@
+
+  .#{$prefix}--text-input {
+    @include font-family;
+    @include typescale('zeta');
+    display: block;
+    width: 100%;
+    height: rem(40px);
+    min-width: rem(300px);
+    padding: 0 $spacing-md;
+    color: $text-base-01;
+    background-color: $field-01;
+    border: none;
+    box-shadow: 0 1px 0 0 $ui-05;
+    order: 2;
+    border-bottom: 1px solid transparent;
+
+    & ~ .#{$prefix}--label {
+      order: 1;
+    }
+
+    &::placeholder {
+      @include placeholder-colors;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2px 0 0 $brand-01;
+    }
+
+    &[data-invalid],
+    &[data-invalid]:focus {
+      box-shadow: 0 2px 0 0 $danger;
+    }
+
+    &:focus ~ .#{$prefix}--label {
+      color: $brand-01;
+    }
+
+    &[data-invalid]:focus + .#{$prefix}--label {
+      color: $danger;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:disabled:hover {
+      border: none;
+    }
+
+    & ~ .#{$prefix}--form-requirement {
+      order: 3;
+      color: $danger;
+      font-weight: 400;
+      margin-top: $spacing-2xs;
+      font-size: 0.75rem;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &-wrapper svg[hidden] {
+      display: none;
+    }
+
+    &[data-toggle-password-visibility] + .#{$prefix}--text-input--password__visibility {
+      top: -28px;
+      right: 12px;
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+      align-items: center;
+      order: 3;
+      height: 16px;
+      width: 16px;
+      padding: 0;
+      margin-bottom: -1rem;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      outline: inherit;
+
+      svg {
+        fill: $brand-01;
+
+        &:hover {
+          fill: $hover-primary;
+        }
+      }
+    }
+  }
+
+  .#{$prefix}--text-input--light {
+    background-color: $field-02;
+  }

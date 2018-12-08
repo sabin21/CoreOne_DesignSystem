@@ -16,12 +16,12 @@ export class DocFoundLayer extends React.Component{
                             <img src={require('../../img/design_guide/layer_sample.png')}  id="found-layer-sample"/>
                         </div>
                         <div className="row">
-                        <table class="table">
+                        <table className="table">
                             <thead>
                                 <tr>
                                 <th scope="col">Layer</th>
                                 <th scope="col">Elevation</th>
-                                <th scope="col">Box-shadow</th>                                
+                                <th scope="col">Box-shadow</th>                             
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,6 +57,8 @@ export class DocFoundLayer extends React.Component{
                                 </tr>
                             </tbody>
                         </table>
+
+                        <img src={require('../../img/design_guide/layer_sample2.png')} />
                         </div>
                     </div>
 

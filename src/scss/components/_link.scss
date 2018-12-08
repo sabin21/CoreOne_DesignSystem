@@ -1,0 +1,28 @@
+.#{$prefix}--link {
+    @include font-family;
+    @include typescale('zeta');
+    @include font-smoothing;
+    font-weight: 600;
+    color: $brand-01;
+    text-decoration: underline;
+    transition: $transition-base;
+
+    &:visited {
+      color: $brand-01;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: $brand-01;
+    }
+
+    &:focus {
+      @include focus-outline('border');
+    }
+
+    &[aria-disabled='true'] {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }

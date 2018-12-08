@@ -1,0 +1,75 @@
+
+  .#{$prefix}--fieldset {
+    margin-bottom: $spacing-06;
+  }
+
+  .#{$prefix}--form-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .#{$prefix}--form-item-light input,
+  .#{$prefix}--form-item-light input[type='number'] {
+    background: $field-02 !important;
+  }
+
+  .#{$prefix}--label {
+    color: $text-base-01;
+    font-weight: $input-label-weight;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: $spacing-03 !important;
+    font-size:16px !important;
+  }
+
+  .#{$prefix}--label .#{$prefix}-tooltip_trigger {
+    @include typescale('zeta');
+  }
+
+  .#{$prefix}--label-disabled {
+    opacity: 0.5;
+  }
+
+  input[data-invalid],
+  textarea[data-invalid],
+  select[data-invalid],
+  .#{$prefix}--list-box[data-invalid] {
+    box-shadow: 0 2px 0px 0px $danger;
+
+    ~ .#{$prefix}--form-requirement {
+      max-height: rem(200px);
+      display: block;
+    }
+  }
+
+  input:not(output):not([data-invalid]):-moz-ui-invalid {
+    box-shadow: none;
+  }
+
+  .#{$prefix}--form-requirement {
+    margin: $spacing-05 0 0;
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 600;
+    line-height: 1.5;
+    display: none;
+
+    &::before {
+      content: '*';
+      display: inline-block;
+      color: $danger;
+    }
+  }
+
+  .#{$prefix}--form__helper-text {
+    color: $text-base-03;
+    order: 1;
+    line-height: 1.5;
+    z-index: 0;
+    max-height: 3rem;
+    opacity: 1;
+    margin-bottom: $spacing-02;
+    font-size: 0.75rem;
+  }
