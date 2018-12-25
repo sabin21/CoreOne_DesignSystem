@@ -45,6 +45,7 @@ $warning: $co-colors__yellow-080;
 $danger: $co-colors__red-100;
 
 $brand-01: $p1-100;
+$brand-02: $p2-100;
 $hover-primary: $p1-200;
 $inverse-01: $white;
 $field-01: $ui-02;
@@ -331,6 +332,11 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 
 $radio-border-width: 2px !default !global;
+
+// Content Switcher
+$content-switcher-border-radius: 0px !default !global;
+$content-switcher-option-border: 1px solid $brand-01 !default !global;
+
 /// Components
 //
 // article
@@ -343,3 +349,17 @@ $btn-transition:  color .15s ease-in-out, background-color .15s ease-in-out,
 border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
 
+//
+//
+//
+
+
+  // Color Theme Variables
+
+  $hover-primary: darken($brand-01, 10%) !default !global;
+  $hover-primary-text: darken($brand-01, 15%) !default !global;
+  $hover-danger: darken($danger, 10%) !default !global;
+  $hover-secondary: $brand-01 !default !global;
+  $hover-row: rgba($brand-02, 0.1) !default !global;
+
+  

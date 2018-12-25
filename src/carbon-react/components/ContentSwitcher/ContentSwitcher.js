@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '../../../globals/settings';
 import { composeEventHandlers } from '../../tools/events';
 
 const { prefix } = settings;

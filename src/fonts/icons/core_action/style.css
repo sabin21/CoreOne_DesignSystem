@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'core action';
+  src:  url('core_action.eot?ole8c');
+  src:  url('core_action.eot?ole8c#iefix') format('embedded-opentype'),
+    url('core_action.ttf?ole8c') format('truetype'),
+    url('core_action.woff?ole8c') format('woff'),
+    url('core_action.svg?ole8c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'core action' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left-bold:before {
+  content: "\e900";
+}
+.icon-chevron-left-regular:before {
+  content: "\e901";
+}
+.icon-chevron-left-thin:before {
+  content: "\e902";
+}
+.icon-chevron-right-bold:before {
+  content: "\e903";
+}
+.icon-chevron-right-regular:before {
+  content: "\e904";
+}
+.icon-chevron-right-thin:before {
+  content: "\e905";
+}

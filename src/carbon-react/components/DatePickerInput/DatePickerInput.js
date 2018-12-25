@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { settings } from 'carbon-components';
+import { settings } from '../../../globals/settings';
 import Icon from '../Icon';
 
 const { prefix } = settings;

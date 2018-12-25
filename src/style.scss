@@ -1,6 +1,9 @@
 
 // Bootstrap 4.0 반응형 그리드 적용
-@import "./scss/bootstrap-grid.scss";
+@import "./scss/bootstrap-grid";
+
+// Icon Font 설
+@import "./fonts/icons/core_action/style.css";
 
 // reset,scss변수, 믹스인 등 공통 SCSS 기능 및 기본 Style 설정
 @import "./scss/globals/css-reset";
@@ -11,7 +14,11 @@
 @import "./scss/globals/type";
 @import "./scss/globals/functions";
 @import "./scss/globals/typography";
-@import "./scss/globals/mixins/helper_mixins";
+@import "./scss/globals/layer";
+
+// Utility
+
+@import "./scss/globals/util";
 
 // Components 스타일 설정
 @import "./scss/components/accordion";
@@ -19,6 +26,8 @@
 @import "./scss/components/form";
 @import "./scss/components/buttons";
 @import "./scss/components/checkbox";
+@import "./scss/components/content-switcher";
+@import "./scss/components/date-picker";
 @import "./scss/components/radio-button";
 @import "./scss/components/link";
 @import "./scss/components/list";
@@ -26,15 +35,17 @@
 @import "./scss/components/text-input";
 
 // Design System Site 스타일 설정
-@import "./scss/_app_layout.scss";
-@import "./scss/_app_layout.scss";
-@import "./scss/_app_utilities.scss";
-@import "./scss/_side_header.scss";
-@import "./scss/_carousel.scss";
+@import "./scss/_app_layout";
+@import "./scss/_app_utilities";
+@import "./scss/_side_header";
 
 // Design Patterns 관련 스타일
-@import "./components/head/_article_head.scss";
-@import "./components/action_bar/_article_actionbar.scss";
+@import "./scss/patterns/headers";
+@import "./scss/patterns/carousel";
+@import "./scss/patterns/cards";
+@import "./scss/patterns/headers";
+@import "./components/head/_article_head";
+@import "./components/action_bar/_article_actionbar";
 
 // Code Highlighter Style - Highlighter.js 스타일 설정
 @import "./scss/github.css";

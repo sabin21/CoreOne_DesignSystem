@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import flatpickr from 'flatpickr';
 import l10n from 'flatpickr/dist/l10n/index';
 import rangePlugin from 'flatpickr/dist/plugins/rangePlugin';
-import { settings } from 'carbon-components';
+import { settings } from '../../../globals/settings';
 import DatePickerInput from '../DatePickerInput';
 import Icon from '../Icon';
 
@@ -13,7 +13,7 @@ const { prefix } = settings;
 // Weekdays shorthand for english locale
 l10n.en.weekdays.shorthand.forEach((day, index) => {
   const currentDay = l10n.en.weekdays.shorthand;
-  if (currentDay[index] === 'Thu' || currentDay[index] === 'Th') {
+  if (currentDay[index] === 'Thu' || currentDay[index] === 'Th') { 
     currentDay[index] = 'Th';
   } else {
     currentDay[index] = currentDay[index].charAt(0);

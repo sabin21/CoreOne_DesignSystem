@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import DocHeader from './doc_header';
 import Highlight from 'react-highlight';
 import { Accordion, AccordionItem } from '../../carbon-react';
-//import { Accordion, AccordionItem } from 'carbon-components-react';
 
 export class DocComAccordion extends React.Component{   
     render(){
@@ -26,12 +25,12 @@ export class DocComAccordion extends React.Component{
                                                     있지요. 뭔가 알아챘다 싶으면 상황은 다시 변하죠. 기술은 발전하고, 팀은 커지고, 경쟁이 일어나고, 결국은 겨우 마련했던 프로세스는 또다시 망가집니다. 
                                                 </p>
                                             </AccordionItem>
-                                            <AccordionItem title="아코디언 타이틀 두번쨰">
+                                            <AccordionItem title="아코디언 타이틀 두번째">
                                                 <p>
                                                     계획은 세우기가 무섭게 한물간 물건이 됩니다. 의지할 만한 일종의 청사진이 없으니, 그렇게 많은 소프트웨어가 결국엔 제 무게를 이기지 못하고 무너지는 것도 놀랄 일은 아닙니다. <br/><br/>우리가 올바른 방향을 정하고 또 지켜내기 위해서는 무언가 필요하다는 것이 분명해 보입니다. 제품 개발의 어려운 면을 쉽게 만들어주고, 느린 부분은 빠르게 만들어주며, 모든 제품이 시간이 지나면서 빠지는 것으로 보이는 저 거대한 복잡함의 구덩이에서 우리가 벗어날 힘을 주는 무언가 말이죠.
                                                 </p>
                                             </AccordionItem>
-                                            <AccordionItem title="아코디언 타이틀 세번쨰">
+                                            <AccordionItem title="아코디언 타이틀 세번째">
                                                 <p>
                                                     계획은 세우기가 무섭게 한물간 물건이 됩니다. 의지할 만한 일종의 청사진이 없으니, 그렇게 많은 소프트웨어가 결국엔 제 무게를 이기지 못하고 무너지는 것도 놀랄 일은 아닙니다. <br/><br/>우리가 올바른 방향을 정하고 또 지켜내기 위해서는 무언가 필요하다는 것이 분명해 보입니다. 제품 개발의 어려운 면을 쉽게 만들어주고, 느린 부분은 빠르게 만들어주며, 모든 제품이 시간이 지나면서 빠지는 것으로 보이는 저 거대한 복잡함의 구덩이에서 우리가 벗어날 힘을 주는 무언가 말이죠.
                                                 </p>

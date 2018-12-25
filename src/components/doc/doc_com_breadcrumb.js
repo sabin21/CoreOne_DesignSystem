@@ -36,15 +36,15 @@ export class DocComBreadCrumb extends React.Component{
                                 <div className="example-code">
 <Highlight>
 {`
-    <nav class="bx--breadcrumb bx--breadcrumb--no-trailing-slash" aria-label="breadcrumb">
-        <div class="bx--breadcrumb-item">
-            <a href="#" class="bx--link">Breadcrumb 1</a>
+    <nav class="c1--breadcrumb c1--breadcrumb--no-trailing-slash" aria-label="breadcrumb">
+        <div class="c1--breadcrumb-item">
+            <a href="#" class="c1--link">Breadcrumb 1</a>
         </div>
-        <div class="bx--breadcrumb-item">
-            <a href="#" class="bx--link">Breadcrumb 2</a>
+        <div class="c1--breadcrumb-item">
+            <a href="#" class="c1--link">Breadcrumb 2</a>
         </div>
-        <div class="bx--breadcrumb-item">
-            <a href="#" class="bx--link">Breadcrumb 3</a>
+        <div class="c1--breadcrumb-item">
+            <a href="#" class="c1--link">Breadcrumb 3</a>
         </div>
     </nav>
 `}
