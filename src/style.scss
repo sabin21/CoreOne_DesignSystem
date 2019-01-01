@@ -2,7 +2,7 @@
 // Bootstrap 4.0 반응형 그리드 적용
 @import "./scss/bootstrap-grid";
 
-// Icon Font 설
+// Icon Font 
 @import "./fonts/icons/core_action/style.css";
 
 // reset,scss변수, 믹스인 등 공통 SCSS 기능 및 기본 Style 설정
@@ -16,7 +16,7 @@
 @import "./scss/globals/typography";
 @import "./scss/globals/layer";
 
-// Utility
+// Utility - 부수적인 유틸성 Style규정
 
 @import "./scss/globals/util";
 
@@ -33,6 +33,7 @@
 @import "./scss/components/list";
 @import "./scss/components/inline-notification";
 @import "./scss/components/text-input";
+@import "./scss/components/time-picker";
 
 // Design System Site 스타일 설정
 @import "./scss/_app_layout";
