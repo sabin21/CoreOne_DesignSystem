@@ -69,7 +69,7 @@ $typescale-map: (
   }
 }
 
-// Only applied to bold weight text
+// 볼드서체에 적용 
 @mixin font-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -78,7 +78,7 @@ $typescale-map: (
 @mixin letter-spacing {
   letter-spacing: 0;
 }
-
+/*
 $font-size-map: (
   '76': 4.75rem,
   '54': 3.375rem,
@@ -99,3 +99,4 @@ $font-size-map: (
     @warn 'This is not a step of the Carbon Type Scale! Valid sizes are 11, 12, 14, 16, 18, 20, 28, 36, 54, and 76';
   }
 }
+*/

@@ -20,8 +20,10 @@ import DocComDatePicker from './doc/doc_com_date-picker';
 import DocComRadio from './doc/doc_com_radio';
 import DocComLink from './doc/doc_com_link';
 import DocComList from './doc/doc_com_list';
+import DocComModal from './doc/doc_com_modal';
 import DocComNotification from './doc/doc_com_notification';
-import DocComTextInput from './doc/doc_com_textinput';
+import DocComInput from './doc/doc_com_input';
+import DocComDropdown from './doc/doc_com_dropdown';
 
 import HeadPattern01 from '../patterns/article_head_01';
 import CardPattern01 from '../patterns/card_01';
@@ -106,6 +108,9 @@ class SubmenuComponent extends React.Component{
                     <NavLink to={"/com_datepicker"}>Date Picker</NavLink>
                 </li>
                 <li className="nav-submenu-link">
+                    <NavLink to={"/com_dropdown"}>Dropdown</NavLink>
+                </li>
+                <li className="nav-submenu-link">
                     <NavLink to={"/com_radio"}>Radio Button</NavLink>
                 </li>
                 <li className="nav-submenu-link">
@@ -115,10 +120,13 @@ class SubmenuComponent extends React.Component{
                     <NavLink to={"/com_list"}>List</NavLink>
                 </li>
                 <li className="nav-submenu-link">
+                    <NavLink to={"/com_modal"}>Modal</NavLink>
+                </li>
+                <li className="nav-submenu-link">
                     <NavLink to={"/com_notification"}>Notification</NavLink>
                 </li>
                 <li className="nav-submenu-link">
-                    <NavLink to={"/com_textinput"}>Text Input</NavLink>
+                    <NavLink to={"/com_input"}>Input</NavLink>
                 </li>
                 <span></span>
             </ul>            
@@ -180,8 +188,10 @@ export class SideMenu extends React.Component{
                         <Route path="/com_radio" component={DocComRadio} />
                         <Route path="/com_link" component={DocComLink} />
                         <Route path="/com_list" component={DocComList} />
+                        <Route path="/com_modal" component={DocComModal} />
                         <Route path="/com_notification" component={DocComNotification} />
-                        <Route path="/com_textinput" component={DocComTextInput} />
+                        <Route path="/com_input" component={DocComInput} />
+                        <Route path="/com_dropdown" component={DocComDropdown} />
                         
                         <Route path="/pattern_head_01" component={HeadPattern01} />
                         <Route path="/pattern_card_01" component={CardPattern01} />

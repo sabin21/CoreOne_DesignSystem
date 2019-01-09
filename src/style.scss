@@ -5,6 +5,8 @@
 // Icon Font 
 @import "./fonts/icons/core_action/style.css";
 
+
+
 // reset,scss변수, 믹스인 등 공통 SCSS 기능 및 기본 Style 설정
 @import "./scss/globals/css-reset";
 @import "./scss/globals/vars";
@@ -28,12 +30,16 @@
 @import "./scss/components/checkbox";
 @import "./scss/components/content-switcher";
 @import "./scss/components/date-picker";
+@import "./scss/components/dropdown";
 @import "./scss/components/radio-button";
 @import "./scss/components/link";
 @import "./scss/components/list";
 @import "./scss/components/inline-notification";
 @import "./scss/components/text-input";
 @import "./scss/components/time-picker";
+
+// Semantic UI
+@import "./semantic-ui/semantic-ui";
 
 // Design System Site 스타일 설정
 @import "./scss/_app_layout";

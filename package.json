@@ -15,9 +15,8 @@
     "@babel/plugin-external-helpers": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-decorators": "^7.1.2",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
     "@babel/plugin-proposal-function-sent": "^7.1.0",
     "@babel/plugin-proposal-json-strings": "^7.0.0",
@@ -27,6 +26,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
     "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/plugin-transform-object-assign": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
@@ -46,16 +46,20 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
+    "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "@semantic-ui-react/event-stack": "^3.0.1",
     "carbon-components": "^9.60.0",
     "carbon-components-react": "^6.55.6",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "express": "^4.16.3",
     "highlight.js": "^9.13.1",
+    "keyboard-key": "^1.0.2",
+    "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-bootstrap": "^1.0.0-beta.1",
@@ -63,6 +67,8 @@
     "react-highlight": "^0.12.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-slick": "^0.23.1"
+    "react-slick": "^0.23.1",
+    "semantic-ui-react": "^0.84.0",
+    "shallowequal": "^1.1.0"
   }
 }
