@@ -1,7 +1,16 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
 module.exports = {
+  entry:{
+    'designSystem':'./src/index.js',
+    'proposal':'./src/draft.js'
+  },
+  output:{
+    path:__dirname + '/dist',
+    filename:'[name].js'
+  },
     module: {
       rules: [
         {
@@ -44,9 +53,22 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
+          chunks:['designSystem'],
           template: "./src/index.html",
-          filename: "./index.html"
+          filename: "index.html"
+        }),
+        new HtmlWebPackPlugin({
+          chunks:['proposal'],
+          template: "./src/draft.html",
+          filename: "draft.html"
         }),
         new ExtractTextPlugin('style.css')
       ]
+      ,
+      devServer: {
+        port:8080,
+        historyApiFallback:{
+          index: 'draft.html'
+        }
+      }
   };

@@ -9,7 +9,6 @@ const cx = classNames.bind(styles);
 var backImage1 = require('../img/photo_sample/1280/woman_01.jpg');
 var backImage2 = require('../img/photo_sample/1280/woman_02.jpg');
 var backImage3 = require('../img/photo_sample/1280/woman_03.jpg');
-
 var avatarImage1 = require('../img/photo_sample/profile/00.jpg');
 
 const post1s = [

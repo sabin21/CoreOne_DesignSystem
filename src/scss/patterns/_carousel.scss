@@ -315,30 +315,42 @@ p.slide-indicator-num {
 }
 
 .slider-split-01{
-    display:flex; width:100%; height: 450px; 
+    display:flex; width:100%; height: 500px; 
     @include pagerLine01();
+    .slick-dots{
+        position: absolute; bottom:-44px;
+    }
     @include arrowBlack01();
     .split-block1{
-        position: absolute; width: 60%; height: 400px; 
+        position: relative; width: 60%; height: 420px; 
         top:0; background:transparent; 
         .slide-inner{
-            position: absolute; width:100%; height: 400px;       
+            position: relative; width:100%; height: 420px;       
             .back-image{
-                width:100%; height: 400px;
+                width:100%; height: inherit;
                 background-size:cover; background-position: center;
             }                        
         }
         .slick-slide{
-            height: 400px;
+            height: 456px;
         }                    
     }
     
     .split-block2{
-        position: absolute; width: 40%; height: 400px; 
+        position: relative; width: 40%; height: 456px; margin-top: 5rem;
         bottom:0; right:0; overflow: hidden;
-        background-color:yellow;
-        .inner-wrap{
-            width: 100%; padding: 2rem; 
-        }
+        .slide-inner {
+            position: relative; width: 100%; height:420px;
+            .inner-wrap{
+                width: 100%; height:inherit;
+                .text-wrap{
+                    width: 100%; padding: 2.5rem;
+                    color: $white;
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+        }        
     }   
 }

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Nanumsquare light';
+  src: url('./fonts/nanumsquare/NanumsquareL.eot') format('eot'),
+  url('./fonts/nanumsquare/NanumsquareL.ttf') format('ttf'),
+  url('./fonts/nanumsquare/NanumsquareL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Nanumsquare regular';
+  src: url('./fonts/nanumsquare/NanumsquareR.eot') format('eot'),
+       url('./fonts/nanumsquare/NanumsquareR.ttf') format('ttf'),
+       url('./fonts/nanumsquare/NanumsquareR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Nanumsquare bold';
+  src: url('./fonts/nanumsquare/NanumsquareB.eot') format('eot'),
+  url('./fonts/nanumsquare/NanumsquareB.ttf') format('ttf'),
+  url('./fonts/nanumsquare/NanumsquareB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.draft-container{
+  .slider-split-01 {
+    
+    margin-top:10rem;
+    h2{
+      font-family:"Nanumsquare light"; font-size: $font-xl4; line-height: 1.25em;
+      margin:0;
+    }
+    p.hero-p{ font-size: $font-md; margin: $spacing-sm 0;}
+  }
+}
