@@ -5,7 +5,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry:{
     'designSystem':'./src/index.js',
-    'proposal':'./src/draft.js'
+    'proposal':'./src/draft.js',
+    'proposalA':'./src/draft_a.js'
   },
   output:{
     path:__dirname + '/dist',
@@ -61,6 +62,11 @@ module.exports = {
           chunks:['proposal'],
           template: "./src/draft.html",
           filename: "draft.html"
+        }),
+        new HtmlWebPackPlugin({
+          chunks:['proposalA'],
+          template: "./src/draft_a.html",
+          filename: "draft_a.html"
         }),
         new ExtractTextPlugin('style.css')
       ]

@@ -25,7 +25,7 @@ function Header() {
 
 const Wrapper = styled.div`
   height: 50px;
-  display: flex;
+  display: none;
   align-items: center;
   background-color: #f5f5f5;
 
